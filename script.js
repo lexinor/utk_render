@@ -97,8 +97,9 @@ class GameRender {
         if (screenshot === true) {
             cameraRTT.setViewOffset(window.innerWidth, window.innerHeight, 0, 0, window.innerWidth, window.innerHeight);
         } else {
-            const width = Math.floor(window.innerHeight * 10 / 23);
-            cameraRTT.setViewOffset(window.innerWidth, window.innerHeight, window.innerWidth / 3.8, 0, width, window.innerHeight);
+            // const width = Math.floor(window.innerHeight * 10 / 23);
+            const width = Math.floor(window.innerHeight);
+            //cameraRTT.setViewOffset(window.innerWidth, window.innerHeight, window.innerWidth, 0, width, window.innerHeight);
         }
 
         this.cameraRTT = cameraRTT;
