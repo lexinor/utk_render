@@ -150,7 +150,7 @@ class GameRender {
         isAnimated = true;
     }
 
-    requestScreenshot = (url, field) => new Promise((res) => {
+    requestScreenshot = (url, field) => new Promise(async (res) => {
         console.time("requestScreenshot");
         this.createTempCanvas();
         url = url ? url : uploadUrl;
